@@ -9,7 +9,7 @@
 
 ## Modeling Considerations
 
--> Consider making one model per ticker. There are about 28 observations per ticker.
+-> Consider making one model per ticker. There are about 28 thousand observations per ticker.
 
 -> Far_price has a very big outlier. Consider appropriate ways of handling outliers
 
