@@ -1,4 +1,7 @@
-from EDA_rmr import sanity_add
+"""Tests"""
+from src.eda_rmr_script import sanity_add
+
 
 def test_sanity_add():
-  assert sanity_add(2, 3) == 5
+    """sanity check"""
+    assert sanity_add(2, 3) == 5
