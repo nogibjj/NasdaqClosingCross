@@ -64,12 +64,12 @@ def lstm_impimentation(df: pd.DataFrame, n_steps_: int = 3, target: str = "targe
 def process_uid(uid):
     """concurrent process for uid"""
     data = df_[df_["stock_id"] == uid]
-    
+
     # data_no_nf = data.dropna(subset=["near_price", "far_price"])
     # data_no_nf = data_no_nf.dropna()
     data_no_nf = data.dropna()
     data_no_nf.reset_index(drop=True, inplace=True)
-    
+
     data_nf = data[data["near_price"].isna() | data["far_price"].isna()]
     data_nf = data_nf.drop(columns=["near_price", "far_price"])
     data_nf = data_nf.dropna()
